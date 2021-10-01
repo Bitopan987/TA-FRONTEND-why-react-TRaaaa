@@ -31,7 +31,7 @@
     <script type="text/babel">
       let input = document.querySelector(`input[type = "text"]`);
       let rootElm = document.querySelector('.movies_List');
-      allMovies = [
+      let allMovies = [
         {
           name: 'Inception',
           watched: false,
@@ -61,20 +61,10 @@
 
       function createMovies() {
         let todoUI = allMovies.map((movie, i) => {
-          //   let li = React.createElement(
-          //     'li',
-          //     {},
-          //     React.createElement('label', {}, movie.name),
-          //     React.createElement(
-          //       'button',
-          //       { id: i, onClick: handleChange },
-          //       movie.watched ? 'Watched' : 'To Watch'
-          //     )
-          //   );
           return (
-            <li>
+            <li key={movie.name}>
               <label>{movie.name}</label>
-              <button data-id={i} onClick="handleChange">
+              <button id={i} onClick={handleChange}>
                 {movie.watched ? 'Watched' : 'To Watch'}
               </button>
             </li>

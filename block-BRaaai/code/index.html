@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Article Card</title>
-
     <script
       crossorigin
       src="https://unpkg.com/react@17/umd/react.development.js"
@@ -32,15 +31,53 @@
         imageURL:
           'https://images.unsplash.com/photo-1610874933184-7728fd666162?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
       };
-      let article = (
-        <>
-          <div className="container">
-            <h1>{cardInfo.title}</h1>;
-            <img src={cardInfo.imageURL} alt="" />
-          </div>
-        </>
+      const monthName = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+        'July',
+        'August',
+        'September',
+        'October',
+        'November',
+        'December',
+      ];
+      let UI = (
+        <div className="container">
+          <section className="hero">
+            <div className="image-div">
+              <img src={cardInfo.imageURL} alt="" />
+            </div>
+            <div className="category">{cardInfo.category}</div>
+            <div className="thumbnail">
+              <p className="day">{cardInfo.date.getDate()}</p>
+              <p className="month">
+                {monthName[cardInfo.date.getMonth()].slice(0, 3)}
+              </p>
+            </div>
+          </section>
+          <article className="post_content">
+            <h1 className="title">{cardInfo.title}</h1>
+            <h2 className="sub-title">{cardInfo.subTitle}</h2>
+            <p className="description">{cardInfo.description}</p>
+          </article>
+          <footer className="footer">
+            <p className="time">
+              <img src="../assets/time.png" alt="" />
+              <span>6 mins ago</span>
+            </p>
+            <p className="comments">
+              <img src="../assets/chat.png" alt="" />
+              <span>{cardInfo.comments}</span> comments
+            </p>
+          </footer>
+        </div>
       );
-      ReactDOM.render(article, document.getElementById('root'));
+      ReactDOM.render(UI, document.getElementById('root'));
     </script>
+    -->
   </body>
 </html>

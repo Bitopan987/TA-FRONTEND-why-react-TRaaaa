@@ -147,9 +147,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.Card {
+  background-color: #f2f2f2;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 7px;
+}
 .container {
   margin: 0 auto;
-  max-width: 70rem;
+  max-width: 60rem;
 }
 
 img {
@@ -167,20 +173,19 @@ img {
   display: inline-block;
   position: absolute;
   bottom: 0.2rem;
-  padding: 0.7rem 1.2rem;
-  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
   color: white;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .thumbnail {
   background-color: #e64c3a;
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  padding: 1rem 1.5rem;
-  font-size: 1.5rem;
+  top: 2.5rem;
+  right: 2.5rem;
+  padding: 2rem 2.5rem;
+  font-size: 2.5rem;
   color: white;
   font-weight: 600;
   border-radius: 50%;
@@ -191,31 +196,34 @@ img {
   padding-bottom: 0.4rem;
 }
 
+.post_content {
+  padding: 1rem 1.5rem;
+}
+
 .post_content .title {
-  font-size: 1.7rem;
-  padding: 0.5rem 0;
-  text-align: left;
+  font-size: 3rem;
+  padding: 1rem 0;
   color: #413e3e;
   font-weight: 600;
 }
 
 .post_content .sub-title {
-  font-size: 1.3rem;
+  font-size: 2.2rem;
   color: #e64c3a;
   font-weight: 500;
-  padding-bottom: 0.7rem;
-}
-
-.description {
-  font-size: 1rem;
-  color: #6d6969;
-  line-height: 1.7rem;
   padding-bottom: 3rem;
 }
 
+.description {
+  font-size: 1.7rem;
+  color: #6d6969;
+  line-height: 2.7rem;
+  padding-bottom: 4rem;
+}
+
 .footer img {
-  width: 1rem;
-  margin-right: 0.5rem;
+  width: 2rem;
+  margin-right: 0.8rem;
 }
 
 .footer {
@@ -227,18 +235,10 @@ img {
   display: flex;
   align-items: center;
   color: gray;
-  font-size: 1rem;
-  padding: 0 0.7rem;
+  font-size: 2rem;
+  padding: 0 1rem;
 }
 
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.Card {
-  flex: 0 1 32%;
-  background-color: #f2f2f2;
-  padding: 1rem;
+.hero img {
+  height: 30rem;
 }

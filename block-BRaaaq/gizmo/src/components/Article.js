@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function Article(props) {
   return (
     <article className="article">
@@ -14,5 +16,15 @@ function Article(props) {
     </article>
   );
 }
+
+Article.propTypes = {
+  author: PropTypes.string,
+  content: PropTypes.string,
+  description: PropTypes.string,
+  publishedAt: PropTypes.string,
+  title: PropTypes.string,
+  url: PropTypes.string,
+  urlToImage: PropTypes.string,
+};
 
 export default Article;

@@ -1,11 +1,8 @@
 function Footer() {
   return (
-    <ul>
-      <li>Facebook</li>
-      <li>Twitter</li>
-      <li>Instagram</li>
-      <li>Reddit</li>
-    </ul>
+    <footer>
+      <p>&copy;2021 Gizmo</p>
+    </footer>
   );
 }
 

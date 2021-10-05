@@ -47,21 +47,22 @@ body {
   }
   .articles {
     margin-top: 4rem;
+    position: relative;
 
     img {
       height: 35rem;
       width: 100%;
     }
     figcaption {
-      h3 {
-        margin-top: -2.5rem;
-        margin-bottom: 3rem;
-        padding: 0 2rem;
-        color: gray;
-        background-color: rgb(235, 240, 227);
-        font-size: 1.2rem;
-        font-weight: 300;
-      }
+      font-size: 2rem;
+      position: absolute;
+      bottom: 12.5rem;
+      background-color: rgba(56, 55, 55, 0.459);
+      display: block;
+      width: 71.7%;
+      padding: 0.7rem 1rem;
+      color: #ece5e5;
+      font-weight: 500;
     }
     .text {
       font-size: 1.5rem;
@@ -80,15 +81,13 @@ body {
     .article {
       border: 1px solid orange;
       padding-bottom: 2rem;
-      margin-bottom: 2.5rem;
     }
   }
   footer {
     p {
       padding: 1rem;
       text-align: center;
-      background-color: #535050;
-      color: white;
+      color: grey;
     }
   }
 }

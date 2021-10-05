@@ -1,5 +1,14 @@
 function Hero() {
-  return <img src="/images/girl.jpg" width="100%" height="100%" alt="" />;
+  return (
+    <section className="hero">
+      <div className="container">
+        <h1>Learn More !</h1>
+        <article>
+          <p>Explore all the local news</p>
+        </article>
+      </div>
+    </section>
+  );
 }
 
 export default Hero;

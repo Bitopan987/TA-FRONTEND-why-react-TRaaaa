@@ -1,10 +1,15 @@
 function Header() {
   return (
-    <ul>
-      <li>Home</li>
-      <li>About</li>
-      <li>Contact</li>
-    </ul>
+    <header>
+      <div className="container flex">
+        <h3>Gizmo</h3>
+        <ul className="flex">
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </header>
   );
 }
 

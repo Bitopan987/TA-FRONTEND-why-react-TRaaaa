@@ -53,8 +53,8 @@
       let root = document.getElementById('root');
 
       function Colors() {
-        return Object.keys(colors).map((key) => (
-          <Color name={key} allColors={colors[key]} />
+        return Object.keys(colors).map((colorName) => (
+          <Color name={colorName} colorCodes={colors[colorName]} />
         ));
       }
 
@@ -63,7 +63,7 @@
           <div>
             <div className="name">{props.name}</div>
             <ul>
-              {props.allColors.map((color, i) => (
+              {props.colorCodes.map((color, i) => (
                 <li>
                   <div
                     className="color-box"
